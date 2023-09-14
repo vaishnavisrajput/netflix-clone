@@ -1,0 +1,402 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: black;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('images/header-image.png');
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.button1{
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 7px 20px;
+}
+.button1 img{
+    width: 10px;
+    margin-left: 10px;
+}
+div .content{
+    width: 1050px;
+}
+.content{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+}
+.content h1{
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: bold;
+    
+}
+.content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.content p{
+    font-size: 18px;
+}
+.signup{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    gap: 10px;
+    margin-top: 20px;
+    max-width: 650px;
+    margin-left: 20%;
+}
+.signup input{
+    border: 1px solid #535251;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 18px 10px;
+    flex-grow: 1;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+.signup button{ 
+    border-radius: 4px;
+    padding: 15px 40px;
+    background-color: #E50815;
+    outline: 0;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+/*--- features ---*/
+.features{
+    font-size: 22px;
+    padding: 50px 12%;
+    border-top: 8px solid #333;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text1{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.text1 h2{
+    font-size: 42px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.text1 p{
+    font-weight: 500;
+}
+
+/*----- FAQ -------*/
+
+.queries {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 12%;
+    border-top: 6px solid #333;
+}
+.faq h2{
+    font-size: 40px;
+    font-weight: 900;
+    margin-top: 50px;
+}
+.accordion{
+    margin: 20px auto;
+   /* width: 800px;*/
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    font-size: 23px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 0.5s;
+    
+}
+.accordion li label:hover{
+    background-color: #413f3f;
+}
+label::after{
+    content: '+';
+    font-size: 40px;
+    right: 20px;
+    position: absolute;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .answer{
+    background: #303030;
+    text-align: left;
+    padding: 0px 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .answer{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+small{
+    font-size: 20px;
+}
+.queries .signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.queries .signup input{
+    font-size: 14px;
+    background-color: #1a191995;
+}
+.last{
+    padding: 50px 12% 10px;
+    border-top: 6px solid #333;
+    color: #d8d8d8;
+}
+.last a{
+    color: #d8d8d8;
+}
+.last p{
+    font-size: 15px;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+    gap: 15px;
+    font-size: 13px;
+}
+.end-button .button1{
+    color: #fff;
+    border-radius: 5%;
+    background-color:  #1a191995;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #535251;
+}
+.end-button p{
+    margin: 30px 0;
+    padding-bottom: 50px;
+    font-size: 14px;
+    color: #b5acac;
+}
+
+/*media queries*/
+@media (max-width: 768px){
+    div .content{
+        width: 700px;
+     }
+    .header{
+        height: 70vh;
+    }
+    .content h1{
+        font-size: 32px;
+        line-height: 1.5;
+    }
+    .content h3{
+        font-size: 18px;
+    }
+    .content p{
+        font-size: 17px;
+    }
+    .signup{
+        margin-left: 9%;
+        max-width: 550px;
+    }
+    .signup button{
+        padding: 15px 20px;
+    }
+    .logo{
+        width: 100px;
+    }
+    .img-col{
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .text1 h2{
+        font-size: 30px;
+    }
+    .text1{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .text1 p{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .features{
+        padding: 50px 5%;
+    }
+    .queries {
+        padding: 10px 3%;
+    }
+    .faq h2{
+        font-size: 35px;
+    }
+    .accordion li label{
+        font-size: 18px;
+    }
+    label::after{
+        font-size: 30px;
+    }
+    small{
+        font-size: 17px;
+    }
+    .last{
+        padding: 50px 6% 10px;
+    }   
+}
+
+@media (max-width: 468px){
+    div .content{
+        width: 400px;
+    }
+    .content{
+        margin-top: 30px
+    }
+    .header{
+        height: 65vh;
+    }
+    .content h1{
+        font-size: 30px;
+        line-height: 1.5;
+    }
+    .logo{
+        width: 90px;
+    }
+    .button1{
+        padding: 5px 10px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+    .content p{
+        font-size: 17px;
+    }
+    .signup{
+        display: flex;
+        flex-direction: column;
+    }
+    .signup input{
+        width: 350px;
+        padding: 13px 10px;
+    }
+    
+    .signup button{
+        padding: 10px 15px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    small{
+        font-size: 15px;
+    }
+    .col{
+        flex-basis: 40%;
+    }
+    .end-button .button1{
+        display: none;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px){
+    div .content{
+        width: 850px;
+    }
+    .header{
+        height: 97vh;
+    }
+    .signup button{
+        padding: 15px 20px;
+    }
+    .signup{
+        max-width: 550px;
+    }
+    .features{
+        padding: 45px 4%;
+    }
+    .accordion li label{
+        font-size: 20px;
+    }
+    .queries {
+        padding: 10px 3%;
+    }
+    small{
+        font-size: 18px;
+    }
+    .last{
+        padding: 50px 5% 10px;
+    }
+    
+}
